@@ -54,9 +54,11 @@ typedef void (*ngx_event_handler_pt)(ngx_event_t *ev);
 #include <ngx_file.h>
 #include <ngx_files.h>
 #include <ngx_crc.h>
+
 #if (HAVE_PCRE)
 #include <ngx_regex.h>
 #endif
+
 #include <ngx_rbtree.h>
 #include <ngx_times.h>
 #include <ngx_inet.h>
@@ -64,9 +66,11 @@ typedef void (*ngx_event_handler_pt)(ngx_event_t *ev);
 #include <ngx_process_cycle.h>
 #include <ngx_conf_file.h>
 #include <ngx_os.h>
+
 #if (NGX_OPENSSL)
 #include <ngx_event_openssl.h>
 #endif
+
 #include <ngx_connection.h>
 
 

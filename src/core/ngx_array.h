@@ -11,6 +11,7 @@
 #include <ngx_config.h>
 #include <ngx_core.h>
 
+// typedef struct ngx_array_s       ngx_array_t;        #include <ngx_core.h>
 
 struct ngx_array_s {
     void        *elts;

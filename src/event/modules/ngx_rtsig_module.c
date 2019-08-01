@@ -35,7 +35,6 @@ typedef struct {
     ngx_int_t  overflow_threshold;
 } ngx_rtsig_conf_t;
 
-
 extern ngx_event_module_t  ngx_poll_module_ctx;
 
 static ngx_int_t ngx_rtsig_init(ngx_cycle_t *cycle);

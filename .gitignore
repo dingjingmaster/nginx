@@ -1,4 +1,6 @@
 .idea/
+cmake-build-debug/
+objs/
 .*.swp
 *.o
 *.log

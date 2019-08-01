@@ -11,7 +11,7 @@
 #include <ngx_config.h>
 #include <ngx_core.h>
 
-
+#define ngx_timezone(isdst) (- (isdst ? 0 : timezone) / 60)
 void ngx_time_init();
 void ngx_time_update(time_t s);
 size_t ngx_http_time(u_char *buf, time_t t);

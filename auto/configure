@@ -3,7 +3,7 @@
 # Copyright (C) Igor Sysoev
 
 
-. auto/options
+. auto/options    # 初始化配置
 . auto/init
 . auto/sources
 

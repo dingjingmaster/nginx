@@ -63,7 +63,7 @@ case $CC in
          CFLAGS="$CFLAGS -Wno-unused"
 
          # stop on warning
-         CFLAGS="$CFLAGS -Werror"
+         CFLAGS="$CFLAGS # -Werror"
 
          # ANSI C warnings
          #CFLAGS="$CFLAGS -pedantic"

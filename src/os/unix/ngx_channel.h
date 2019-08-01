@@ -12,6 +12,7 @@
 #include <ngx_core.h>
 #include <ngx_event.h>
 
+#define HAVE_MSGHDR_MSG_CONTROL 1
 
 typedef struct {
      ngx_uint_t  command;

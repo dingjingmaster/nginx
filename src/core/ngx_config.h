@@ -7,6 +7,9 @@
 #ifndef _NGX_CONFIG_H_INCLUDED_
 #define _NGX_CONFIG_H_INCLUDED_
 
+#ifndef IOV_MAX
+#define IOV_MAX   1024
+#endif
 
 #if defined __DragonFly__ && !defined __FreeBSD__
 #define __FreeBSD__        4

@@ -19,18 +19,20 @@ typedef int  ngx_socket_t;
 #define ngx_socket_n        "socket()"
 
 
+int ngx_blocking(ngx_socket_t s);
+
 #if (HAVE_FIONBIO)
 
 int ngx_nonblocking(ngx_socket_t s);
-int ngx_blocking(ngx_socket_t s);
 
-#define ngx_nonblocking_n   "ioctl(FIONBIO)"
 #define ngx_blocking_n      "ioctl(!FIONBIO)"
+#define ngx_nonblocking_n   "ioctl(FIONBIO)"
 
 #else
 
 #define ngx_nonblocking(s)  fcntl(s, F_SETFL, O_NONBLOCK)
 #define ngx_nonblocking_n   "fcntl(O_NONBLOCK)"
+#define ngx_blocking_n      "ioctl(!FIONBIO)"
 
 #endif
 
